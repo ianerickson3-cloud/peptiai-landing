@@ -1,104 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeptiAI - AI Peptide Insights</title>
+  <meta name="description" content="Educational AI tool for peptide research suggestions, cycles, dosages, and price comparisons. Coming soon!">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #000;
+      color: #fff;
+      background-image: url('https://i.ibb.co/HD0tck88/background.jpg'); /* Direct ImgBB link - update if needed */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .content {
+      background: rgba(0,0,0,0.7);
+      padding: 50px 30px;
+      border-radius: 16px;
+      max-width: 800px;
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #0A84FF, #7C3AED);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p { font-size: 1.5rem; margin: 20px 0; }
+    .disclaimer { 
+      color: #ffcc00; 
+      font-weight: bold; 
+      font-size: 1.3rem; 
+      margin: 30px 0; 
+    }
+    .logo { 
+      max-width: 280px; 
+      margin-bottom: 40px; 
+      border-radius: 16px; 
+      box-shadow: 0 0 40px rgba(10,132,255,0.5);
+    }
+    a.cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #0A84FF, #7C3AED);
+      color: white;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-top: 30px;
+      transition: all 0.3s;
+    }
+    a.cta:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(10,132,255,0.5);
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 3rem; }
+      .logo { max-width: 220px; }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;PeptiAI - AI Peptide Insights&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Educational AI tool for peptide research. Coming soon!"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #000;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-image: url('https://ibb.co/HD0tck88'); /* ← Replace with direct image URL if this doesn't load */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-position: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-attachment: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.content {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(0,0,0,0.7);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(4px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 3.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #0A84FF, #7C3AED);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>-webkit-background-clip: text;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>-webkit-text-fill-color: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>p { font-size: 1.4rem; margin: 20px 0; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.disclaimer { color: #ffcc00; font-weight: bold; font-size: 1.2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logo {<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 250px;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 0 30px rgba(10,132,255,0.4);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a.cta {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #0A84FF, #7C3AED);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.3rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a.cta:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-3px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 30px rgba(10,132,255,0.5);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 80px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h1 { font-size: 2.8rem; }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.logo { max-width: 200px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="https://ibb.co/TxL82S31" alt="PeptiAI Logo" class="logo"&gt; &lt;!-- ← Replace with direct image URL if this doesn't load --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;PeptiAI&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;🧬🤖 AI-powered peptide insights + price comparison&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Study suggestions &amp; cycles for longevity/biohacking.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="disclaimer"&gt;Research/educational only — not medical advice. Consult professionals. Coming soon!&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#signup" class="cta"&gt;Join the Waitlist&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>© 2026 PeptiAI • Educational Research Tool • Austin, TX</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <div class="content">
+    <img src="https://i.ibb.co/TxL82S31/logo.png" alt="PeptiAI Logo" class="logo"> <!-- Direct ImgBB link -->
+    <h1>PeptiAI</h1>
+    <p>🧬🤖 AI-powered peptide insights + price comparison</p>
+    <p>Study suggestions & cycles for longevity/biohacking.</p>
+    <p class="disclaimer">Research/educational only — not medical advice. Consult professionals. Coming soon!</p>
+    <a href="https://forms.gle/YOUR_FORM_LINK" class="cta">Join the Waitlist</a> <!-- Replace with real form link if you have one -->
+  </div>
+
+  <footer>
+    © 2026 PeptiAI • Educational Research Tool • Austin, TX
+  </footer>
 </body>
 </html>
