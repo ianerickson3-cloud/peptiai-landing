@@ -1,0 +1,208 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>\
+  <title>PeptiAI - AI-Powered Peptide Education & Insights</title>\
+  <meta name="description" content="Educational AI tool for peptide research suggestions, cycles, dosages, and price comparisons. Strictly research/educational only.">\
+  <!-- Open Graph for social sharing -->\
+  <meta property="og:title" content="PeptiAI">\
+  <meta property="og:description" content="AI peptide insights + price comparison. Study suggestions & cycles. Research/educational only. Coming soon!">\
+  <meta property="og:image" content="YOUR_LOGO_IMAGE_URL_HERE"> <!-- Replace with direct link to your brain/peptide logo -->\
+  <meta property="og:url" content="https://peptiai.io">\
+  <link rel="icon" href="https://ibb.co/TxL82S31" type="image/png"> <!-- Small version of logo -->\
+  <style>\
+    :root \{\
+      --bg: #000000;\
+      --text: #ffffff;\
+      --accent: #0A84FF;\
+      --accent-purple: #7C3AED;\
+      --gradient: linear-gradient(135deg, #0A84FF, #7C3AED);\
+    \}\
+    * \{ margin:0; padding:0; box-sizing:border-box; \}\
+    body \{\
+      font-family: system-ui, -apple-system, sans-serif;\
+      background: var(--bg);\
+      color: var(--text);\
+      line-height: 1.6;\
+      background-image: url('https://ibb.co/HD0tck88'); /* Replace with your main dark biotech background image */\
+      background-size: cover;\
+      background-position: center;\
+      background-attachment: fixed;\
+    \}\
+    .overlay \{ \
+      background: rgba(0,0,0,0.65); \
+      min-height: 100vh; \
+      display: flex; \
+      flex-direction: column; \
+      justify-content: center; \
+      align-items: center; \
+      text-align: center; \
+      padding: 40px 20px; \
+    \}\
+    .logo \{\
+      max-width: 280px;\
+      margin-bottom: 30px;\
+      border-radius: 16px;\
+      box-shadow: 0 0 40px rgba(10,132,255,0.4);\
+    \}\
+    h1 \{\
+      font-size: 4.5rem;\
+      margin-bottom: 20px;\
+      background: var(--gradient);\
+      -webkit-background-clip: text;\
+      -webkit-text-fill-color: transparent;\
+      background-clip: text;\
+    \}\
+    .tagline \{\
+      font-size: 1.6rem;\
+      max-width: 800px;\
+      margin: 0 auto 40px;\
+    \}\
+    .disclaimer \{\
+      font-size: 1.2rem;\
+      font-weight: bold;\
+      color: #ffcc00;\
+      margin: 20px 0;\
+      max-width: 700px;\
+    \}\
+    .cta \{\
+      display: inline-block;\
+      background: var(--gradient);\
+      color: white;\
+      padding: 16px 48px;\
+      border-radius: 50px;\
+      text-decoration: none;\
+      font-size: 1.4rem;\
+      font-weight: bold;\
+      transition: all 0.3s;\
+      box-shadow: 0 10px 30px rgba(10,132,255,0.3);\
+    \}\
+    .cta:hover \{\
+      transform: translateY(-3px);\
+      box-shadow: 0 15px 40px rgba(10,132,255,0.5);\
+    \}\
+    section \{\
+      padding: 100px 20px;\
+      max-width: 1000px;\
+      margin: 0 auto;\
+      background: rgba(0,0,0,0.7);\
+      border-radius: 16px;\
+      margin-bottom: 60px;\
+    \}\
+    h2 \{ font-size: 3rem; margin-bottom: 30px; \}\
+    ul \{ \
+      list-style: none; \
+      text-align: left; \
+      max-width: 700px; \
+      margin: 0 auto 40px; \
+    \}\
+    li \{\
+      font-size: 1.3rem;\
+      margin: 20px 0;\
+      padding-left: 50px;\
+      position: relative;\
+    \}\
+    li::before \{ \
+      content: "\uc0\u55358 \u56812 "; \
+      position: absolute; \
+      left: 0; \
+      font-size: 2rem; \
+    \}\
+    form \{\
+      max-width: 500px;\
+      margin: 40px auto 0;\
+    \}\
+    input[type="email"] \{\
+      width: 100%;\
+      padding: 18px;\
+      font-size: 1.3rem;\
+      border: 2px solid var(--accent);\
+      border-radius: 12px;\
+      background: rgba(255,255,255,0.08);\
+      color: white;\
+      margin-bottom: 20px;\
+    \}\
+    button \{\
+      background: var(--gradient);\
+      color: white;\
+      border: none;\
+      padding: 18px 60px;\
+      font-size: 1.4rem;\
+      border-radius: 50px;\
+      cursor: pointer;\
+      font-weight: bold;\
+    \}\
+    footer \{\
+      text-align: center;\
+      padding: 60px 20px;\
+      font-size: 1rem;\
+      border-top: 1px solid rgba(255,255,255,0.1);\
+    \}\
+    .social-links a \{\
+      color: var(--accent);\
+      margin: 0 20px;\
+      font-size: 1.8rem;\
+      text-decoration: none;\
+    \}\
+    @media (max-width: 768px) \{\
+      h1 \{ font-size: 3.2rem; \}\
+      .tagline \{ font-size: 1.4rem; \}\
+      .logo \{ max-width: 220px; \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <div class="overlay">\
+    <img src="YOUR_LOGO_IMAGE_URL_HERE" alt="PeptiAI Logo" class="logo"> <!-- Replace with direct link to the brain/peptide split logo -->\
+    <h1>PeptiAI</h1>\
+    <p class="tagline">\
+      \uc0\u55358 \u56812 \u55358 \u56598  AI-powered peptide insights + real-time price comparison<br>\
+      Study-based suggestions, dosages & cycles for longevity and biohacking<br>\
+      <span class="disclaimer">Strictly research / educational use only \'97 not medical advice. Consult professionals. Coming soon!</span>\
+    </p>\
+    <a href="#signup" class="cta">Join the Waitlist</a>\
+  </div>\
+\
+  <section id="about">\
+    <h2>What is PeptiAI?</h2>\
+    <p>Your educational AI companion for exploring peptides in anti-aging, recovery, and longevity research.</p>\
+    <ul>\
+      <li>AI-generated suggestions based on public studies (BPC-157, GHK-Cu, Epithalon, TB-500, etc.)</li>\
+      <li>Research-sourced cycle lengths, dosages, and usage notes</li>\
+      <li>Integrated price comparison across trusted suppliers</li>\
+      <li>Freemium model: Core features free, premium unlocks custom reports & alerts</li>\
+    </ul>\
+    <p class="disclaimer"><strong>Important:</strong> This is for educational and research purposes only. Not intended as medical advice, diagnosis, or treatment. Peptides are often restricted \'97 always consult qualified healthcare professionals.</p>\
+  </section>\
+\
+  <section id="signup" style="background: rgba(0,0,0,0.75);">\
+    <h2>Get Early Access</h2>\
+    <p>Sign up for launch updates, beta invites, and exclusive longevity insights.</p>\
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> <!-- Get free endpoint from formspree.io -->\
+      <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">\
+      <button type="submit">Subscribe</button>\
+    </form>\
+  </section>\
+\
+  <section class="social-links">\
+    <h2>Connect</h2>\
+    <a href="https://x.com/peptiai" target="_blank">@peptiai on X</a>\
+    <a href="https://x.com/dude_abides_atx" target="_blank">@dude_abides_atx</a>\
+  </section>\
+\
+  <footer>\
+    <p>\'a9 2026 PeptiAI \'95 Educational Research Tool \'95 Dallas, Texas</p>\
+    <p class="disclaimer">Not medical advice. Strictly for research and educational purposes. Consult professionals.</p>\
+  </footer>\
+\
+</body>\
+</html>}
